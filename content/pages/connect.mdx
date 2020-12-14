@@ -1,0 +1,58 @@
+---
+title: "Connect"
+---
+import React from 'react'
+import { Box, SimpleGrid, Button, Text, Icon, VisuallyHidden, Input, Textarea,  FormControl, FormLabel, VStack  } from '@chakra-ui/react'
+import { FiTwitter, FiMail, FiGithub, FiInstagram, FiLinkedin} from "react-icons/fi"
+
+
+<SimpleGrid columns="2" gap="10">
+  <form d="grid" col="1|repeat(2, auto)" gap="4" mt="0" w="full|auto" method="post" action="/contact-success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+    <VStack spacing="4">
+    <VisuallyHidden>
+    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="contact" />
+    </VisuallyHidden>
+    <FormControl id="name" isRequired>
+      <VisuallyHidden>  
+      <FormLabel>Name</FormLabel>
+      </VisuallyHidden>
+      <Input type="text" placeholder="Name" />
+    </FormControl>
+    <FormControl id="email" isRequired>
+      <VisuallyHidden>
+      <FormLabel>Email address</FormLabel>
+      </VisuallyHidden>
+      <Input type="email" placeholder="Email" />
+    </FormControl>
+    <FormControl id="subject" isRequired>
+      <VisuallyHidden>
+      <FormLabel>Subject</FormLabel>
+      </VisuallyHidden>
+      <Input type="text" placeholder="Subject" />
+    </FormControl>
+    <FormControl id="email" isRequired>
+      <VisuallyHidden>
+      <FormLabel>Message</FormLabel>
+      </VisuallyHidden>
+      <Textarea placeholder="Enter your message here." />
+    </FormControl>
+    <Button leftIcon={<Icon as={FiMail} />} colorScheme="brand" type="submit">Send Message</Button>
+    </VStack>
+  </form>
+
+  <Box mt="4">
+    <SimpleGrid columns={2} gap="4" w="full|auto" mt="0">
+      <Button href="https://twitter.com/timlindgren"  colorScheme="brand" leftIcon={<Icon as={FiTwitter} />}>Twitter </Button> 
+      <Button href="https://www.Buttonedin.com/in/timlindgren/" colorScheme="brand" leftIcon={<Icon as={FiLinkedin} />}>Linked In</Button> 
+      <Button href="https://www.instagram.com/timothylindgren/" colorScheme="brand" leftIcon={<Icon as={FiInstagram} />}> Instagram </Button> 
+      <Button href="https://github.com/tlindgren" colorScheme="brand" leftIcon={<Icon as={FiGithub} />}>Github</Button> 
+    </SimpleGrid>
+  </Box>
+</SimpleGrid>
+
+
+
+
+
+
