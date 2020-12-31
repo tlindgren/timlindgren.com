@@ -1,12 +1,25 @@
 ---
-title: "Connect"
+title: "Contact"
 ---
-import React from 'react'
-import { Box, SimpleGrid, Button, Text, Icon, VisuallyHidden, Input, Textarea,  FormControl, FormLabel, VStack  } from '@chakra-ui/react'
-import { FiTwitter, FiMail, FiGithub, FiInstagram, FiLinkedin} from "react-icons/fi"
 
+import React from "react";
+import {
+  Box,
+  Container,
+  Button,
+  Text,
+  Icon,
+  VisuallyHidden,
+  Input,
+  Textarea,
+  FormControl,
+  FormLabel,
+  VStack,
+} from "@chakra-ui/react";
+import { FiMail } from "react-icons/fi";
+import Social from "../../src/components/social";
 
-<SimpleGrid columns="2" gap="10">
+<Box maxWidth="lg" mb="10">
   <form d="grid" col="1|repeat(2, auto)" gap="4" mt="0" w="full|auto" method="post" action="/contact-success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
     <VStack spacing="4">
     <VisuallyHidden>
@@ -41,18 +54,6 @@ import { FiTwitter, FiMail, FiGithub, FiInstagram, FiLinkedin} from "react-icons
     </VStack>
   </form>
 
-  <Box mt="4">
-    <SimpleGrid columns={2} gap="4" w="full|auto" mt="0">
-      <Button href="https://twitter.com/timlindgren"  colorScheme="brand" leftIcon={<Icon as={FiTwitter} />}>Twitter </Button> 
-      <Button href="https://www.Buttonedin.com/in/timlindgren/" colorScheme="brand" leftIcon={<Icon as={FiLinkedin} />}>Linked In</Button> 
-      <Button href="https://www.instagram.com/timothylindgren/" colorScheme="brand" leftIcon={<Icon as={FiInstagram} />}> Instagram </Button> 
-      <Button href="https://github.com/tlindgren" colorScheme="brand" leftIcon={<Icon as={FiGithub} />}>Github</Button> 
-    </SimpleGrid>
-  </Box>
-</SimpleGrid>
+</Box>
 
-
-
-
-
-
+<Social />
