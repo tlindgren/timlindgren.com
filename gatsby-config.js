@@ -97,5 +97,13 @@ module.exports = {
         trackingId: "UA-425810-3",
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Inter:300,400,600,700,800"],
+        },
+      },
+    },
   ],
 };
