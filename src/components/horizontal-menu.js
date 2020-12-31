@@ -11,7 +11,7 @@ const HorizontalMenu = (props) => {
             textTransform="uppercase"
             fontWeight="600"
             color="white"
-            fontSize="xl"
+            fontSize="lg"
             href="/about"
           >
             About
@@ -22,7 +22,7 @@ const HorizontalMenu = (props) => {
             textTransform="uppercase"
             fontWeight="600"
             color="white"
-            fontSize="xl"
+            fontSize="lg"
             href="/notes"
           >
             Notes
@@ -33,7 +33,7 @@ const HorizontalMenu = (props) => {
             textTransform="uppercase"
             fontWeight="600"
             color="white"
-            fontSize="xl"
+            fontSize="lg"
             href="/portfolio"
           >
             Portfolio
@@ -44,7 +44,7 @@ const HorizontalMenu = (props) => {
             textTransform="uppercase"
             fontWeight="600"
             color="white"
-            fontSize="xl"
+            fontSize="lg"
             href="/changelog"
           >
             Changelog

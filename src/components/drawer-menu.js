@@ -50,7 +50,7 @@ export default function DrawerExample() {
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
-                      fontSize="xl"
+                      fontSize="lg"
                       href="/about"
                     >
                       About
@@ -60,7 +60,7 @@ export default function DrawerExample() {
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
-                      fontSize="xl"
+                      fontSize="lg"
                       href="/notes"
                     >
                       Notes
@@ -70,7 +70,7 @@ export default function DrawerExample() {
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
-                      fontSize="xl"
+                      fontSize="lg"
                       href="/portfolio"
                     >
                       Portfolio
@@ -80,7 +80,7 @@ export default function DrawerExample() {
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
-                      fontSize="xl"
+                      fontSize="lg"
                       href="/changelog"
                     >
                       Changelog
