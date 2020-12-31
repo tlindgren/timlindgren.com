@@ -56,7 +56,7 @@ export default function DrawerExample() {
                       About
                     </Link>
                   </ListItem>
-                  <ListItem align="center" px="3">
+                  <ListItem align="center" px="3" d="none">
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
@@ -66,7 +66,7 @@ export default function DrawerExample() {
                       Notes
                     </Link>
                   </ListItem>
-                  <ListItem align="center" px="3">
+                  <ListItem align="center" px="3" d="none">
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"
@@ -76,7 +76,7 @@ export default function DrawerExample() {
                       Portfolio
                     </Link>
                   </ListItem>
-                  <ListItem align="center" px="3">
+                  <ListItem align="center" px="3" d="none">
                     <Link
                       textTransform="uppercase"
                       fontWeight="600"

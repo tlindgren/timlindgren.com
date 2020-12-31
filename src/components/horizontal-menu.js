@@ -17,7 +17,7 @@ const HorizontalMenu = (props) => {
             About
           </Link>
         </ListItem>
-        <ListItem align="center" px="3">
+        <ListItem align="center" px="3" d="none">
           <Link
             textTransform="uppercase"
             fontWeight="600"
@@ -28,7 +28,7 @@ const HorizontalMenu = (props) => {
             Notes
           </Link>
         </ListItem>
-        <ListItem align="center" px="3">
+        <ListItem align="center" px="3" d="none">
           <Link
             textTransform="uppercase"
             fontWeight="600"
@@ -39,7 +39,7 @@ const HorizontalMenu = (props) => {
             Portfolio
           </Link>
         </ListItem>
-        <ListItem align="center" px="3">
+        <ListItem align="center" px="3" d="none">
           <Link
             textTransform="uppercase"
             fontWeight="600"
