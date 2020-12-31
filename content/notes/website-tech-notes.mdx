@@ -4,22 +4,20 @@ title: "website tech notes"
 
 <Container mt="10" maxWidth="750px">
 
-# website tech notes
-
 ## Adding a contact form
 
-How to add a simple contact form using a reflexjs block and Netifyly form handling. 
+How to add a simple contact form using a reflexjs block and Netifyly form handling.
 
-I grabbed a example form from the [Reflex Blocks library](https://reflexjs.org/library/blocks/form-01) and added it to my contact form: [content/blocks/contactform.mdx ](https://github.com/tlindgren/timlindgren.com/blob/master/content/blocks/contactform.mdx). 
+I grabbed a example form from the [Reflex Blocks library](https://reflexjs.org/library/blocks/form-01) and added it to my contact form: [content/blocks/contactform.mdx ](https://github.com/tlindgren/timlindgren.com/blob/master/content/blocks/contactform.mdx).
 
-Since I'm using Netifyly for deployment, I consulted the Gatsby documentaiton on [form handling](https://www.gatsbyjs.com/docs/building-a-contact-form/#netlify) and added some attributes to the form component: 
+Since I'm using Netifyly for deployment, I consulted the Gatsby documentaiton on [form handling](https://www.gatsbyjs.com/docs/building-a-contact-form/#netlify) and added some attributes to the form component:
 
-````
+```
 <Form method="post" action="/contact-success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-````
+```
 
-The action="/contact-success" sends users to my contact-success.mdx page which is the same as the contact page with a success message. 
+The action="/contact-success" sends users to my contact-success.mdx page which is the same as the contact page with a success message.
 
-The next time a deployed to Netifly, it recognized the form and then I could added my email in the form settings to be notified when someone submits the form. 
+The next time a deployed to Netifly, it recognized the form and then I could added my email in the form settings to be notified when someone submits the form.
 
 </Container>
