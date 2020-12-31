@@ -11,7 +11,7 @@ export default function noteTemplate({ data }) {
   const { mdx } = data;
 
   return (
-    <article>
+    <article class="mdx">
       <SEO title={mdx.frontmatter.title} />
       <Heading as="h1" size="2xl" my="8">
         {mdx.frontmatter.title}
