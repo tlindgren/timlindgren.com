@@ -16,11 +16,11 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-images`,
-          `gatsby-remark-images-medium-zoom` // Important!
+          `gatsby-remark-images-medium-zoom`, // Important!
         ],
         extensions: [`.mdx`, `.md`],
-         // a workaround to solve mdx-remark plugin compat issue
-          // https://github.com/gatsbyjs/gatsby/issues/15486
+        // a workaround to solve mdx-remark plugin compat issue
+        // https://github.com/gatsbyjs/gatsby/issues/15486
         gatsbyRemarkPlugins: [
           // Wikilinks
           {
@@ -34,14 +34,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 700,
-              linkImagesToOriginal: false // Important!
-            }
+              linkImagesToOriginal: false, // Important!
+            },
           },
           {
             resolve: `gatsby-remark-images-medium-zoom`, // Important!
-            options: {}
-          }
-        ]
+            options: {},
+          },
+        ],
       },
     },
     // Link References
@@ -57,18 +57,18 @@ module.exports = {
     // File System
     {
       resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `notes`,
-          path: `${__dirname}/content/notes/`,
-        },
+      options: {
+        name: `notes`,
+        path: `${__dirname}/content/notes/`,
       },
-      {
+    },
+    {
       resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `pages`,
-          path: `${__dirname}/content/pages/`,
-        },
+      options: {
+        name: `pages`,
+        path: `${__dirname}/content/pages/`,
       },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -90,5 +90,12 @@ module.exports = {
         icon: `content/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-425810-3",
+      },
+    },
   ],
-}
+};
