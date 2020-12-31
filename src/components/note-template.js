@@ -7,6 +7,8 @@ import {
   Heading,
   Box,
   Button,
+  Icon,
+  SimpleGrid,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -18,13 +20,13 @@ import {
 import SEO from "../components/seo";
 import moment from "moment";
 
-const shortcodes = { Link, Heading, Box, Button }; // Provide common components here
+const shortcodes = { Link, Heading, Box, Button, Icon, SimpleGrid }; // Provide common components here
 
 export default function noteTemplate({ data, pageContext }) {
   const { mdx } = data;
 
   return (
-    <article>
+    <Box as="article">
       <SEO title={mdx.frontmatter.title} />
       <Heading as="h1" size="2xl" fontWeight="800" my="10" mb="8">
         {mdx.frontmatter.title}
@@ -74,7 +76,7 @@ export default function noteTemplate({ data, pageContext }) {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </article>
+    </Box>
   );
 }
 

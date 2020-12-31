@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import { Box } from '@chakra-ui/react'
-import { graphql, useStaticQuery } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
-import Header from './header'
+import { Box, Container } from "@chakra-ui/react";
+import { graphql, useStaticQuery } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import Header from "./header";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,28 +20,20 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Box 
-        as="div"
-        margin="0 auto"
-        maxWidth="960px"
-        padding="0 1.0875rem 1.45rem"
-      >
-        <Box  as="main">{children}</Box>
-        <Box  as="footer" marginTop="2rem" fontSize="xl">
-         
-        </Box>
-      </Box>
+      <Container maxW="lg">
+        <Box as="main">{children}</Box>
+      </Container>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
