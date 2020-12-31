@@ -97,6 +97,17 @@ export const theme = extendTheme({
           textDecoration: "underline",
           color: props.colorMode === "dark" ? "brand.100" : "brand.500",
         },
+        pre: {
+          backgroundColor: props.colorMode === "dark" ? "blue.500" : "blue.100",
+          borderRadius: "lg",
+          p: "3",
+          my: "6",
+          maxWidth: "100%",
+          overflowX: "scroll",
+        },
+        hr: {
+          my: "6",
+        },
       },
     }),
   },
