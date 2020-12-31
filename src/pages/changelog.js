@@ -8,7 +8,7 @@ const ChangelogIndex = ({ data }) => {
   return (
     <Box>
       <SEO title="Changlog" />
-      <Heading as="h1" size="2xl" py="8">
+      <Heading as="h1" size="2xl" fontWeight="800" my="10" mb="8">
         Changelog
       </Heading>
       <ul>
