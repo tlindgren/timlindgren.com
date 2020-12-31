@@ -70,6 +70,29 @@ export const theme = extendTheme({
       a: {
         color: props.colorMode === "dark" ? "brand.100" : "brand.500",
       },
+      ul: {
+        paddingLeft: "20px",
+      },
+      ".mdx": {
+        h1: {
+          fontSize: "5xl",
+          mb: "4",
+          fontWeight: "800",
+        },
+        h2: {
+          fontSize: "4xl",
+          mb: "3",
+          fontWeight: "700",
+        },
+        p: {
+          fontSize: "lg",
+          mb: "4",
+        },
+        a: {
+          textDecoration: "underline",
+          color: props.colorMode === "dark" ? "brand.100" : "brand.500",
+        },
+      },
     }),
   },
 });
