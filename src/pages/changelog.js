@@ -1,12 +1,16 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { Box, Link, Heading } from '@chakra-ui/react'
+import React from "react";
+import { graphql } from "gatsby";
+import { Box, Link, Heading } from "@chakra-ui/react";
+import SEO from "../components/seo";
 
 const ChangelogIndex = ({ data }) => {
-  const { edges: notes } = data.allMdx
+  const { edges: notes } = data.allMdx;
   return (
-   <Box>
-      <Heading as="h1" size="2xl" py="8">Changelog</Heading>
+    <Box>
+      <SEO title="Changlog" />
+      <Heading as="h1" size="2xl" py="8">
+        Changelog
+      </Heading>
       <ul>
         {notes.map(({ node: note }) => (
           <li key={note.id}>
@@ -16,22 +20,20 @@ const ChangelogIndex = ({ data }) => {
           </li>
         ))}
       </ul>
-   </Box>
-  )
-}
+    </Box>
+  );
+};
 
 export const pageQuery = graphql`
   query changelogIndex {
-    allMdx (
-    filter: { frontmatter: { type: { eq: "changelog" } } }
-    ) {
+    allMdx(filter: { frontmatter: { type: { eq: "changelog" } } }) {
       edges {
-        node {                                                                                                                                                      
+        node {
           id
           excerpt
-          frontmatter {                                                                                                     
+          frontmatter {
             title
-            type                     
+            type
           }
           fields {
             slug
@@ -40,5 +42,5 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-export default ChangelogIndex
+`;
+export default ChangelogIndex;
