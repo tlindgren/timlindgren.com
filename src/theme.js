@@ -83,7 +83,7 @@ export const theme = extendTheme({
         },
         h2: {
           fontSize: "4xl",
-          mb: "2",
+          mb: "4",
           fontWeight: "700",
         },
         h3: {
@@ -108,8 +108,10 @@ export const theme = extendTheme({
           overflowX: "scroll",
         },
         hr: {
-          mt: "12",
+          mt: "10",
           mb: "6",
+          borderColor: props.colorMode === "dark" ? "blue.700" : "blue.300",
+          borderWidth: "1px",
         },
       },
     }),
