@@ -14,14 +14,14 @@ import {
   Textarea,
   FormControl,
   FormLabel,
-  VStack,
+  Stack,
 } from "@chakra-ui/react";
 import { FiMail } from "react-icons/fi";
 import Social from "../../src/components/social";
 
 <Box maxWidth="lg" mb="10">
   <form d="grid" col="1|repeat(2, auto)" gap="4" mt="0" w="full|auto" method="post" action="/contact-success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-    <VStack spacing="4">
+    <Stack spacing="4" direction="column">
     <VisuallyHidden>
     <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
@@ -51,9 +51,7 @@ import Social from "../../src/components/social";
       <Textarea placeholder="Enter your message here." />
     </FormControl>
     <Button leftIcon={<Icon as={FiMail} />} colorScheme="brand" type="submit">Send Message</Button>
-    </VStack>
+    </Stack>
   </form>
 
 </Box>
-
-<Social />

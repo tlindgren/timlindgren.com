@@ -1,23 +1,17 @@
 ---
-title: "Connect - Success"
+title: "Contact"
 ---
 
-import React from 'react'
-import { Box, SimpleGrid, Container, Heading} from '@chakra-ui/react'
+import React from "react";
+import { Box, Link, Alert, AlertIcon } from "@chakra-ui/react";
 
-<Box as="section" py="0|2|4|8">
-  <Container>
-    <SimpleGrid col="1|2" gap="8|12|16" >
-    <p fontWeight="extrabold" fontSize="20">Thanks! Your message has been sent. </p>
-    </SimpleGrid>
-  </Container>
-</Box>    
+<Box as="section" maxWidth="lg" mt="10">
 
+{" "}
+<Alert status="success" fontWeight="extrabold" fontSize="20" mb="10">
+  <AlertIcon />
+  Thanks! Your message has been sent.
+</Alert>
+<Link href="/contact">Back to Contact Form </Link>
 
-
-
-
-
-
-
-
+</Box>
