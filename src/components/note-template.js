@@ -36,46 +36,53 @@ export default function noteTemplate({ data, pageContext }) {
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </section>
-      <Box>
-        {mdx.inboundReferences.length > 0 ? (
-          <Heading as="h2" size="m">
-            Referenced In
-          </Heading>
-        ) : (
-          ""
-        )}
-        <ul>
-          {mdx.inboundReferences.map((ref) => (
-            <li>
-              <Link href={`/${ref.slug}`}>{ref.frontmatter.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </Box>
-      <Accordion allowToggle mt="5">
-        <AccordionItem border="none" p="0">
-          <AccordionButton as="h2" size="xl" p="0">
-            <Heading as="h2" size="s" fontWeight="normal">
-              Revision History
-            </Heading>
-            <AccordionIcon />
-          </AccordionButton>
-          <AccordionPanel pb={4} px="0">
-            <UnorderedList mb="3">
-              {pageContext.changelog.map(({ hash, date, message, body }) => (
-                <ListItem key={hash}>
-                  {moment(date).format("ddd Do MMM, YYYY")}: {message} {body}
-                </ListItem>
+      <Box mt="8">
+        <footer>
+          <Box>
+            {mdx.inboundReferences.length > 0 ? (
+              <Heading as="h2" size="m">
+                Referenced In
+              </Heading>
+            ) : (
+              ""
+            )}
+            <ul>
+              {mdx.inboundReferences.map((ref) => (
+                <li>
+                  <Link href={`/${ref.slug}`}>{ref.frontmatter.title}</Link>
+                </li>
               ))}
-            </UnorderedList>
-            <Link
-              href={`https://github.com/tlindgren/timlindgren.com/blob/main/content/notes/${mdx.slug}.mdx`}
-            >
-              View in Github
-            </Link>
-          </AccordionPanel>
-        </AccordionItem>
-      </Accordion>
+            </ul>
+          </Box>
+          <Accordion allowToggle mt="5">
+            <AccordionItem border="none" p="0">
+              <AccordionButton as="h2" size="xl" p="0">
+                <Heading as="h2" size="s" fontWeight="normal">
+                  Revision History
+                </Heading>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel pb={4} px="0">
+                <UnorderedList mb="3">
+                  {pageContext.changelog.map(
+                    ({ hash, date, message, body }) => (
+                      <ListItem key={hash}>
+                        {moment(date).format("ddd Do MMM, YYYY")}: {message}{" "}
+                        {body}
+                      </ListItem>
+                    )
+                  )}
+                </UnorderedList>
+                <Link
+                  href={`https://github.com/tlindgren/timlindgren.com/blob/main/content/notes/${mdx.slug}.mdx`}
+                >
+                  View in Github
+                </Link>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </footer>
+      </Box>
     </Box>
   );
 }
