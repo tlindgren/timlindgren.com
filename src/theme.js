@@ -108,7 +108,8 @@ export const theme = extendTheme({
           overflowX: "scroll",
         },
         hr: {
-          my: "6",
+          mt: "12",
+          mb: "6",
         },
       },
     }),
