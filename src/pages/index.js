@@ -27,74 +27,56 @@ const IndexPage = () => (
         </Text>
       </Center>
       <SimpleGrid columns={{ lg: "3" }} textAlign="center" spacing={4} pt="20">
-        <Box
-          border="1px"
-          borderColor="gray.200"
-          padding="6"
-          borderRadius="lg"
-          boxShadow="base"
-          bgColor="brand.25"
-        >
+        <Box borderRadius="lg" boxShadow="lg" bgColor="brand.25">
           <Text
             as="h2"
             fontSize="2xl"
             fontWeight="800"
             textTransform="uppercase"
             mb="4"
-            color="blue.900"
+            color="white"
+            bgColor="brand.700"
           >
             Learning Design
           </Text>
-          <Text fontSize="lg">
+          <Text fontSize="xl" px="6" pb="6" pt="2">
             Helping educators design meaningful learning experiences
           </Text>
         </Box>
-        <Box
-          border="1px"
-          borderColor="gray.200"
-          padding="6"
-          borderRadius="lg"
-          boxShadow="base"
-          bgColor="brand.25"
-        >
+        <Box borderRadius="lg" boxShadow="lg" bgColor="brand.25">
           <Text
             as="h2"
             fontSize="2xl"
             fontWeight="800"
             textTransform="uppercase"
             mb="4"
-            color="blue.900"
+            color="white"
+            bgColor="brand.700"
           >
             Web Development
           </Text>
-          <Text fontSize="lg">
+          <Text fontSize="xl" px="6" pb="6" pt="2">
             Building interfaces that show users some love
           </Text>
         </Box>
-        <Box
-          border="1px"
-          borderColor="gray.200"
-          padding="6"
-          borderRadius="lg"
-          boxShadow="base"
-          bgColor="brand.25"
-        >
+        <Box borderRadius="lg" boxShadow="lg" bgColor="brand.25">
           <Text
             as="h2"
             fontSize="2xl"
             fontWeight="800"
             textTransform="uppercase"
             mb="4"
-            color="blue.900"
+            color="white"
+            bgColor="brand.700"
           >
             Consulting
           </Text>
-          <Text fontSize="lg" s>
+          <Text fontSize="xl" px="6" pb="6" pt="2">
             Thinking with people to help their ideas grow
           </Text>
         </Box>
       </SimpleGrid>
-      <Wrap width="100%" mt="24" justify="center">
+      <Wrap width="100%" mt="10" justify="center">
         <WrapItem>
           <Button href="/about" colorScheme="brand" as="a">
             About Me{" "}
@@ -106,7 +88,7 @@ const IndexPage = () => (
           </Button>
         </WrapItem>
       </Wrap>
-      <Wrap width="100%" mt="6" justify="center">
+      <Wrap width="100%" mt="24" mb="8" justify="center">
         <WrapItem>
           <Social />
         </WrapItem>
