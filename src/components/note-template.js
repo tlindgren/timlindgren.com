@@ -8,6 +8,7 @@ import {
   Box,
   Button,
   Icon,
+  Text,
   SimpleGrid,
   Accordion,
   AccordionItem,
@@ -20,7 +21,7 @@ import {
 import SEO from "../components/seo";
 import moment from "moment";
 
-const shortcodes = { Link, Heading, Box, Button, Icon, SimpleGrid }; // Provide common components here
+const shortcodes = { Link, Heading, Box, Button, Icon, Text, SimpleGrid }; // Provide common components here
 
 export default function noteTemplate({ data, pageContext }) {
   const { mdx } = data;
@@ -36,7 +37,7 @@ export default function noteTemplate({ data, pageContext }) {
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </section>
-      <Box mt="8">
+      <Box my="8">
         <footer>
           <Box>
             {mdx.inboundReferences.length > 0 ? (

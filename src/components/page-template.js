@@ -2,10 +2,10 @@ import React from "react";
 import { graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Link, Heading, Box, Button, SimpleGrid } from "@chakra-ui/react";
+import { Link, Heading, Box, Button, SimpleGrid, Text } from "@chakra-ui/react";
 import SEO from "../components/seo";
 
-const shortcodes = { Link, Heading, Box, Button, SimpleGrid }; // Provide common components here
+const shortcodes = { Link, Heading, Box, Button, SimpleGrid, Text }; // Provide common components here
 
 export default function noteTemplate({ data }) {
   const { mdx } = data;
