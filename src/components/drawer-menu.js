@@ -10,7 +10,6 @@ import {
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -26,11 +25,11 @@ export default function DrawerExample() {
     <>
       <Button
         ref={btnRef}
-        colorScheme="teal"
+        colorScheme="blue"
         onClick={onOpen}
         d={{ lg: "none" }}
       >
-        Open
+        Menu
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -92,13 +91,6 @@ export default function DrawerExample() {
                 </List>
               </Flex>
             </DrawerBody>
-
-            <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button color="blue">Save</Button>
-            </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
