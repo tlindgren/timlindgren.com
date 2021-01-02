@@ -1,9 +1,26 @@
 import React from "react";
 import { Wrap, WrapItem, Button, Icon } from "@chakra-ui/react";
-import { FiTwitter, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import {
+  FiTwitter,
+  FiGithub,
+  FiInstagram,
+  FiLinkedin,
+  FiMail,
+} from "react-icons/fi";
 
 const Social = () => (
   <Wrap spacing="2">
+    <WrapItem>
+      <Button
+        leftIcon={<Icon as={FiMail} />}
+        colorScheme="gray"
+        href="/contact"
+        as="a"
+      >
+        {" "}
+        Email
+      </Button>
+    </WrapItem>
     <WrapItem>
       <Button
         href="https://twitter.com/timlindgren"
