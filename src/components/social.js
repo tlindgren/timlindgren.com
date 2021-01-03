@@ -13,7 +13,9 @@ const Social = () => (
     <WrapItem>
       <Button
         leftIcon={<Icon as={FiMail} />}
-        colorScheme="gray"
+        colorScheme="brand"
+        color="brand.100"
+        variant="outline"
         href="/contact"
         as="a"
       >
@@ -25,7 +27,9 @@ const Social = () => (
       <Button
         href="https://twitter.com/timlindgren"
         as="a"
-        colorScheme="gray"
+        colorScheme="brand"
+        color="brand.100"
+        variant="outline"
         leftIcon={<Icon as={FiTwitter} />}
       >
         Twitter{" "}
@@ -35,7 +39,9 @@ const Social = () => (
       <Button
         href="https://www.Buttonedin.com/in/timlindgren/"
         as="a"
-        colorScheme="gray"
+        colorScheme="brand"
+        color="brand.100"
+        variant="outline"
         leftIcon={<Icon as={FiLinkedin} />}
       >
         LinkedIn
@@ -45,7 +51,9 @@ const Social = () => (
       <Button
         href="https://www.instagram.com/timothylindgren/"
         as="a"
-        colorScheme="gray"
+        colorScheme="brand"
+        color="brand.100"
+        variant="outline"
         leftIcon={<Icon as={FiInstagram} />}
       >
         {" "}
@@ -56,7 +64,9 @@ const Social = () => (
       <Button
         href="https://github.com/tlindgren"
         as="a"
-        colorScheme="gray"
+        colorScheme="brand"
+        color="brand.100"
+        variant="outline"
         leftIcon={<Icon as={FiGithub} />}
       >
         Github
