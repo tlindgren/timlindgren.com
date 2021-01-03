@@ -16,19 +16,25 @@ import { GoPlus } from "react-icons/go";
 const IndexPage = () => (
   <>
     <SEO title="Tim Lindgren" />
-    <Box as="section" pb="0">
+    <Box
+      as="section"
+      pb="0"
+      minHeight="100vh"
+      bgGradient="linear(to-t, brand.800, brand.700)"
+    >
       <Center centerContent>
         <Text
           fontSize={{ base: "5xl", lg: "6xl", xl: "6xl" }}
           fontWeight="extrabold"
           textAlign="center"
-          color="blue.600"
+          color="#fff"
           m="0"
-          pt={{ base: "8", lg: "12" }}
-          pb={{ base: "10", lg: "20" }}
+          px={{ base: "8", lg: "0" }}
+          pt={{ base: "10", lg: "16" }}
+          pb={{ base: "10", lg: "12", xl: "12" }}
         >
-          learning <Icon as={GoPlus} color="brand.600" w={12} h={12} />{" "}
-          designing <Icon as={GoPlus} color="brand.600" w={12} h={12} />{" "}
+          learning <Icon as={GoPlus} color="brand.300" w={12} h={12} />{" "}
+          designing <Icon as={GoPlus} color="brand.300" w={12} h={12} />{" "}
           thinking
         </Text>
       </Center>
@@ -36,17 +42,17 @@ const IndexPage = () => (
         columns={{ lg: "3" }}
         textAlign="center"
         spacing={{ base: "10", md: "12", lg: "8", xl: "10" }}
-        m={{ base: "8", lg: "8", xl: "0" }}
+        m={{ base: "8", lg: "8", xl: "16" }}
       >
-        <Box borderRadius="lg" boxShadow="md" bgColor="brand.25">
+        <Box borderRadius="lg" boxShadow="2xl" bgColor="brand.600">
           <Text
             as="h2"
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
-            fontWeight="400"
+            fontWeight="600"
             textTransform="uppercase"
             mb="4"
-            color="white"
-            bgColor="brand.600"
+            color="brand.100"
+            pt="4"
           >
             Learning Design
           </Text>
@@ -55,19 +61,20 @@ const IndexPage = () => (
             px="6"
             pb="6"
             pt="2"
+            color="white"
           >
             Crafting formative learning experiences
           </Text>
         </Box>
-        <Box borderRadius="lg" boxShadow="md" bgColor="brand.25">
+        <Box borderRadius="lg" boxShadow="2xl" bgColor="brand.600">
           <Text
             as="h2"
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
-            fontWeight="400"
+            fontWeight="600"
             textTransform="uppercase"
             mb="4"
-            color="white"
-            bgColor="brand.600"
+            color="brand.100"
+            pt="4"
           >
             Web Development
           </Text>
@@ -76,19 +83,20 @@ const IndexPage = () => (
             px="6"
             pb="6"
             pt="2"
+            color="white"
           >
             Building interfaces that show users some love
           </Text>
         </Box>
-        <Box borderRadius="lg" boxShadow="md" bgColor="brand.25">
+        <Box borderRadius="lg" boxShadow="2xl" bgColor="brand.600">
           <Text
             as="h2"
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
-            fontWeight="400"
+            fontWeight="600"
             textTransform="uppercase"
             mb="4"
-            color="white"
-            bgColor="brand.600"
+            color="brand.100"
+            pt="4"
           >
             Consulting
           </Text>
@@ -97,12 +105,13 @@ const IndexPage = () => (
             px="6"
             pb="6"
             pt="2"
+            color="white"
           >
             Thinking with people to help their ideas grow
           </Text>
         </Box>
       </SimpleGrid>
-      <Wrap width="100%" mt="10" justify="center">
+      <Wrap mt="10" justify="center">
         <WrapItem d="none">
           <Button href="/about" colorScheme="brand" as="a">
             About Me{" "}
@@ -114,7 +123,7 @@ const IndexPage = () => (
           </Button>
         </WrapItem>
       </Wrap>
-      <Wrap width="100%" mt="24" mb="8" justify="center">
+      <Wrap width="100%" mt="16" pb="8" justify="center">
         <WrapItem>
           <Social />
         </WrapItem>
