@@ -19,39 +19,51 @@ import {
 import { FiMail } from "react-icons/fi";
 import Social from "../../src/components/social";
 
-<Box maxWidth="lg" mb="10">
-  <form d="grid" col="1|repeat(2, auto)" gap="4" mt="0" w="full|auto" method="post" action="/contact-success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+<Box maxW="lg" mb="10">
+  <form
+    d="grid"
+    col="1|repeat(2, auto)"
+    gap="4"
+    mt="0"
+    w="full|auto"
+    method="post"
+    action="/contact-success"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+    name="contact"
+  >
     <Stack spacing="4" direction="column">
-    <VisuallyHidden>
-    <input type="hidden" name="bot-field" />
-    <input type="hidden" name="form-name" value="contact" />
-    </VisuallyHidden>
-    <FormControl id="name" isRequired>
-      <VisuallyHidden>  
-      <FormLabel>Name</FormLabel>
-      </VisuallyHidden>
-      <Input type="text" placeholder="Name" />
-    </FormControl>
-    <FormControl id="email" isRequired>
       <VisuallyHidden>
-      <FormLabel>Email address</FormLabel>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
       </VisuallyHidden>
-      <Input type="email" placeholder="Email" />
-    </FormControl>
-    <FormControl id="subject" isRequired>
-      <VisuallyHidden>
-      <FormLabel>Subject</FormLabel>
-      </VisuallyHidden>
-      <Input type="text" placeholder="Subject" />
-    </FormControl>
-    <FormControl id="email" isRequired>
-      <VisuallyHidden>
-      <FormLabel>Message</FormLabel>
-      </VisuallyHidden>
-      <Textarea placeholder="Enter your message here." />
-    </FormControl>
-    <Button leftIcon={<Icon as={FiMail} />} colorScheme="brand" type="submit">Send Message</Button>
+      <FormControl id="name" isRequired>
+        <VisuallyHidden>
+          <FormLabel>Name</FormLabel>
+        </VisuallyHidden>
+        <Input type="text" placeholder="Name" />
+      </FormControl>
+      <FormControl id="email" isRequired>
+        <VisuallyHidden>
+          <FormLabel>Email address</FormLabel>
+        </VisuallyHidden>
+        <Input type="email" placeholder="Email" />
+      </FormControl>
+      <FormControl id="subject" isRequired>
+        <VisuallyHidden>
+          <FormLabel>Subject</FormLabel>
+        </VisuallyHidden>
+        <Input type="text" placeholder="Subject" />
+      </FormControl>
+      <FormControl id="email" isRequired>
+        <VisuallyHidden>
+          <FormLabel>Message</FormLabel>
+        </VisuallyHidden>
+        <Textarea placeholder="Enter your message here." />
+      </FormControl>
+      <Button leftIcon={<Icon as={FiMail} />} colorScheme="brand" type="submit">
+        Send Message
+      </Button>
     </Stack>
   </form>
-
 </Box>

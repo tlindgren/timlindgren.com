@@ -28,7 +28,7 @@ export default function noteTemplate({ data, pageContext }) {
   const { mdx } = data;
 
   return (
-    <Container maxW="lg">
+    <Container maxW="4xl">
       <Box as="article">
         <SEO title={mdx.frontmatter.title} />
         <Heading as="h1" size="2xl" fontWeight="800" my="10" mb="8">
