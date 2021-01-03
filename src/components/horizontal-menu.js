@@ -50,7 +50,7 @@ const HorizontalMenu = (props) => {
             Changelog
           </Link>
         </ListItem>
-        <ListItem align="center" d="none">
+        <ListItem align="center">
           <ThemeToggle />
         </ListItem>
       </List>
