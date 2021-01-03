@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Button,
+  Icon,
   useDisclosure,
   Flex,
   List,
@@ -14,8 +15,10 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  VisuallyHidden,
 } from "@chakra-ui/react";
 import ThemeToggle from "./theme-toggle";
+import { FiMenu } from "react-icons/fi";
 
 export default function DrawerExample() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,7 +32,8 @@ export default function DrawerExample() {
         onClick={onOpen}
         d={{ lg: "none" }}
       >
-        Menu
+        <VisuallyHidden>Menu</VisuallyHidden>
+        <Icon as={FiMenu} />
       </Button>
       <Drawer
         isOpen={isOpen}
