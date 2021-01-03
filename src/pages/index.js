@@ -16,25 +16,26 @@ import { GoPlus } from "react-icons/go";
 const IndexPage = () => (
   <>
     <SEO title="Tim Lindgren" />
-    <Box as="section" pt="12" pb="0">
+    <Box as="section" pb="0">
       <Center centerContent>
         <Text
-          fontSize={{ base: "5xl", lg: "5xl", xl: "6xl" }}
+          fontSize={{ base: "5xl", lg: "6xl", xl: "6xl" }}
           fontWeight="extrabold"
           textAlign="center"
           color="blue.600"
           m="0"
+          pt={{ base: "8", lg: "12" }}
+          pb={{ base: "10", lg: "20" }}
         >
           learning <Icon as={GoPlus} color="brand.600" w={12} h={12} />{" "}
           designing <Icon as={GoPlus} color="brand.600" w={12} h={12} />{" "}
-          thinking <Icon as={GoPlus} color="brand.600" w={12} h={12} /> living
+          thinking
         </Text>
       </Center>
       <SimpleGrid
         columns={{ lg: "3" }}
         textAlign="center"
         spacing={{ base: "10", md: "12", lg: "8", xl: "10" }}
-        pt="20"
         m={{ base: "8", lg: "8", xl: "0" }}
       >
         <Box borderRadius="lg" boxShadow="md" bgColor="brand.25">
@@ -55,7 +56,7 @@ const IndexPage = () => (
             pb="6"
             pt="2"
           >
-            Helping educators design meaningful learning experiences
+            Crafting formative learning experiences
           </Text>
         </Box>
         <Box borderRadius="lg" boxShadow="md" bgColor="brand.25">
