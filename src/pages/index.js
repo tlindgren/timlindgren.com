@@ -102,7 +102,7 @@ const IndexPage = () => (
         </Box>
       </SimpleGrid>
       <Wrap width="100%" mt="10" justify="center">
-        <WrapItem>
+        <WrapItem d="none">
           <Button href="/about" colorScheme="brand" as="a">
             About Me{" "}
           </Button>
