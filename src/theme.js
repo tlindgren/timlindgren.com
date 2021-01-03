@@ -67,13 +67,17 @@ export const theme = extendTheme({
         fontSize: "md",
         color: props.colorMode === "dark" ? "white" : "Black",
         lineHeight: "tall",
-        bg: props.colorMode === "dark" ? "brand.700" : "white",
+        bg: props.colorMode === "dark" ? "brand.900" : "white",
       },
       a: {
         color: props.colorMode === "dark" ? "brand.100" : "brand.500",
       },
       ul: {
         paddingLeft: "20px",
+      },
+      p: {
+        fontSize: "lg",
+        mb: "4",
       },
       ".mdx": {
         h1: {
@@ -91,10 +95,6 @@ export const theme = extendTheme({
           mb: "2",
           fontWeight: "700",
         },
-        p: {
-          fontSize: "lg",
-          mb: "4",
-        },
         a: {
           textDecoration: "underline",
           color: props.colorMode === "dark" ? "brand.100" : "brand.500",
@@ -110,7 +110,7 @@ export const theme = extendTheme({
         hr: {
           mt: "10",
           mb: "6",
-          borderColor: props.colorMode === "dark" ? "blue.700" : "blue.300",
+          borderColor: props.colorMode === "dark" ? "blue.100" : "blue.800",
           borderWidth: "1px",
         },
       },
