@@ -67,7 +67,7 @@ export const theme = extendTheme({
         fontSize: "md",
         color: props.colorMode === "dark" ? "white" : "Black",
         lineHeight: "tall",
-        bg: props.colorMode === "dark" ? "brand.900" : "white",
+        bg: props.colorMode === "dark" ? "brand.700" : "white",
       },
       a: {
         color: props.colorMode === "dark" ? "brand.100" : "brand.500",
