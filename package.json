@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-chakra-ui",
+  "name": "timlingren.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and Chakra UI",
+  "description": "Personal website built with Gatsby and Chakra-UI",
   "version": "0.1.0",
   "author": {
-    "name": "Scott Spence",
-    "email": "yo@scottspence.dev",
-    "url": "https://scottspence.com"
+    "name": "Tim Lindgren",
+    "email": "contact@timlindgren.com",
+    "url": "https://timlingren.com"
   },
   "keywords": [
     "gatsby"
@@ -28,7 +28,7 @@
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^1.0.0",
     "@chakra-ui/icons": "^1.0.1",
-    "@chakra-ui/react": "^1.0.1",
+    "@chakra-ui/react": "^1.1",
     "@emotion/react": "^11.1.1",
     "@emotion/styled": "^11.0.0",
     "@mdx-js/mdx": "^1.6.22",
