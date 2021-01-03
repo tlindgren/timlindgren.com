@@ -51,7 +51,7 @@ const HorizontalMenu = (props) => {
           </Link>
         </ListItem>
         <ListItem align="center">
-          <ThemeToggle />
+          <ThemeToggle d="none" />
         </ListItem>
       </List>
     </Flex>

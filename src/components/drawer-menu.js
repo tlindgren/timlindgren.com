@@ -90,7 +90,7 @@ export default function DrawerExample() {
                     </Link>
                   </ListItem>
                   <ListItem align="center">
-                    <ThemeToggle />
+                    <ThemeToggle d="none" />
                   </ListItem>
                 </List>
               </Flex>
