@@ -2,8 +2,8 @@
 title: About
 ---
 
+import { HStack, Divider } from "@chakra-ui/react";
 import Social from "../../src/components/social";
-import { FiMail } from "react-icons/fi";
 
 <Box w={{base: "100%", sm: "35%",lg:"20%"}} float="left" mr="5" >
 
@@ -25,9 +25,7 @@ I have a B.A. in English from Wheaton College (IL) and a PhD in English from Bos
 <SimpleGrid columns={{lg:"2"}} gap={{base:"6",lg:"12"}} mt="10">
 <Box>
 
-<Text as="h2" bg="blue.900" color="white" px="4" size="md">
-  About this Site{" "}
-</Text>
+<Text as="h2">About this Site</Text>
 
 I use this site as a place to learn in public and share what I'm working on.
 
@@ -36,9 +34,7 @@ I'm in the process of relaunching a new version so check back soon as I role out
 </Box>
 <Box>
 
-<Text as="h2" bg="blue.900" color="white" px="4" mb="6" d="block" size="md">
-  Get in Touch{" "}
-</Text>
+<Text as="h2">Get in Touch </Text>
 
 Feel free to reach out if you have any questions or what to chat.
 
@@ -46,20 +42,15 @@ Feel free to reach out if you have any questions or what to chat.
 </Box>
 </SimpleGrid>
 
-<Text
-  as="h2"
-  bg="blue.900"
-  color="white"
-  px="4"
-  mt="10"
-  d="flex"
-  alignItems="center"
->
-  Now{" "}
-  <Text pl="5" size="md" position="relative" top="2">
-    A few things that I'm doing at the moment{" "}
+<Divider />
+<HStack mt="10">
+  <Text as="h2" mb="0">
+    Now
   </Text>
-</Text>
+  <Text pl="3" size="xl" fontWeight="600">
+    A few things that I'm doing at the moment
+  </Text>
+</HStack>
 
 <SimpleGrid columns={{ lg: "2" }} spacing={10} mt="6">
 <Box>
