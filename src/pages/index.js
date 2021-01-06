@@ -50,17 +50,16 @@ const IndexPage = () => (
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
             fontWeight="600"
             textTransform="uppercase"
-            mb="4"
+            mb="2"
             color="brand.100"
-            pt="4"
+            pt="8"
           >
             Learning Design
           </Text>
           <Text
             fontSize={{ base: "xl", md: "2xl", lg: "xl", xl: "2xl" }}
             px="6"
-            pb="6"
-            pt="2"
+            pb=""
             color="white"
           >
             Crafting formative learning experiences
@@ -72,9 +71,9 @@ const IndexPage = () => (
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
             fontWeight="600"
             textTransform="uppercase"
-            mb="4"
+            mb="2"
             color="brand.100"
-            pt="4"
+            pt="8"
           >
             Web Development
           </Text>
@@ -82,7 +81,6 @@ const IndexPage = () => (
             fontSize={{ base: "xl", md: "2xl", lg: "xl", xl: "2xl" }}
             px="6"
             pb="6"
-            pt="2"
             color="white"
           >
             Building interfaces that show users some love
@@ -94,9 +92,9 @@ const IndexPage = () => (
             fontSize={{ base: "3xl", md: "4xl", lg: "2xl", xl: "3xl" }}
             fontWeight="600"
             textTransform="uppercase"
-            mb="4"
+            mb="2s"
             color="brand.100"
-            pt="4"
+            pt="8"
           >
             Consulting
           </Text>
@@ -104,10 +102,9 @@ const IndexPage = () => (
             fontSize={{ base: "xl", md: "2xl", lg: "xl", xl: "2xl" }}
             px="6"
             pb="6"
-            pt="2"
             color="white"
           >
-            Thinking with people to help their ideas grow
+            Thinking with people to help their ideas (and them) grow
           </Text>
         </Box>
       </SimpleGrid>
