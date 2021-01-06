@@ -1,0 +1,16 @@
+/* Miscellaneous styles  */
+
+/* MDX - auto-link header styling */
+.anchor {
+  display: none;
+  margin-left: 10px;
+}
+
+.mdx h2 {
+  display: flex;
+  align-items: center;
+}
+
+.mdx h2:hover .anchor {
+  display: block;
+}
