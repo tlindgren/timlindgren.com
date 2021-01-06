@@ -9,6 +9,7 @@ import {
   Button,
   Icon,
   Text,
+  Header,
   Container,
   SimpleGrid,
   Accordion,
@@ -22,7 +23,16 @@ import {
 import SEO from "../components/seo";
 import moment from "moment";
 
-const shortcodes = { Link, Heading, Box, Button, Icon, Text, SimpleGrid }; // Provide common components here
+const shortcodes = {
+  Link,
+  Heading,
+  Box,
+  Button,
+  Icon,
+  Text,
+  Header,
+  SimpleGrid,
+}; // Provide common components here
 
 export default function noteTemplate({ data, pageContext }) {
   const { mdx } = data;

@@ -10,10 +10,11 @@ import {
   SimpleGrid,
   Container,
   Text,
+  Header,
 } from "@chakra-ui/react";
 import SEO from "../components/seo";
 
-const shortcodes = { Link, Heading, Box, Button, SimpleGrid, Text }; // Provide common components here
+const shortcodes = { Link, Heading, Box, Button, SimpleGrid, Text, Header }; // Provide common components here
 
 export default function noteTemplate({ data }) {
   const { mdx } = data;
