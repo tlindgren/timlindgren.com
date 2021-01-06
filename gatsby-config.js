@@ -24,9 +24,9 @@ module.exports = {
         gatsbyRemarkPlugins: [
           // Wikilinks
           {
-            resolve: "gatsby-remark-double-brackets-link",
+            resolve: `gatsby-remark-double-brackets-link`,
             options: {
-              stripBrackets: false,
+              stripBrackets: true,
             },
           },
           //images
@@ -40,6 +40,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images-medium-zoom`, // Important!
             options: {},
+          },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`,
+              removeAccents: true,
+              isIconAfterHeader: true,
+            },
           },
         ],
       },
