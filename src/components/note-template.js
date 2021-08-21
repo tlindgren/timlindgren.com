@@ -9,8 +9,11 @@ import {
   Button,
   Icon,
   Text,
+  Divider,
   Header,
   Container,
+  Stack,
+  Grid,
   SimpleGrid,
   Accordion,
   AccordionItem,
@@ -19,6 +22,7 @@ import {
   AccordionIcon,
   UnorderedList,
   ListItem,
+  GridItem,
 } from "@chakra-ui/react";
 import SEO from "../components/seo";
 import moment from "moment";
@@ -27,11 +31,15 @@ const shortcodes = {
   Link,
   Heading,
   Box,
+  Divider,
   Button,
   Icon,
   Text,
   Header,
+  Stack,
   SimpleGrid,
+  Grid,
+  GridItem,
 }; // Provide common components here
 
 export default function noteTemplate({ data, pageContext }) {
