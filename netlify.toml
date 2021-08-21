@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://timlindgren.com/*"
+  to = "https://publish.obsidian.md/serve?url=timlindgren.com/:splat"
+  status = 200
+  force = true
